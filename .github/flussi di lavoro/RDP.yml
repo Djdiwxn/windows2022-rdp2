@@ -26,8 +26,8 @@ jobs:
     - name: Connect Ngrok.
       run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
-    - name: Action Access RDP.
+        NGROK_AUTH_TOKEN : $ {{ 2Ac7eX2bH8k4CxzZMWLhO2HB9lY_BQVtuuiBbGSgYrro97ms }}
+    - nome : Azione Accesso RDP.
       run: | 
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
